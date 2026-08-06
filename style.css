@@ -31,7 +31,7 @@ body {
   position: relative;
 
   /* Foto de fondo — Celi reemplaza foto.jpg en GitHub y se actualiza sola */
-  background-image: url("foto.jpg");
+  background-image: url("foto.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
