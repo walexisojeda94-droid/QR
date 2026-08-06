@@ -1,0 +1,118 @@
+:root {
+  --beige: #E8E0D2;
+  --beige-sombra: #D8CDB8;
+  --tinta: #1C1A16;
+  --tinta-suave: #4A4740;
+  --linea: rgba(28, 26, 22, 0.14);
+  --focus: #8A6F4E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--tinta);
+  background-color: var(--beige);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 32px;
+  position: relative;
+
+  /* Foto de fondo — Celi reemplaza foto.jpg en GitHub y se actualiza sola */
+  background-image: url("foto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Velo degradé abajo, para que los botones se lean sobre cualquier foto */
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 18%,
+    rgba(0, 0, 0, 0) 45%
+  );
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+  padding-bottom: 8vh;
+}
+
+.botones {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  border: 1.4px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  backdrop-filter: blur(6px);
+}
+
+.boton svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.boton:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.boton:focus-visible {
+  outline: 2.5px solid #FFFFFF;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boton {
+    transition: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .boton {
+    justify-content: center;
+  }
+}
