@@ -30,8 +30,8 @@ body {
   padding: 32px;
   position: relative;
 
-  /* La foto de fondo la agrega script.js automáticamente,
-     probando foto.jpg / foto.jpeg / foto.png (cualquiera que Celi suba) */
+    /* Foto de fondo — Celi reemplaza foto.jpeg en GitHub y se actualiza sola */
+  background-image: url("foto.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
