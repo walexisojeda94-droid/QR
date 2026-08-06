@@ -30,8 +30,8 @@ body {
   padding: 32px;
   position: relative;
 
-  /* Foto de fondo — Celi reemplaza foto.jpg en GitHub y se actualiza sola */
-  background-image: url("foto.jpeg");
+  /* La foto de fondo la agrega script.js automáticamente,
+     probando foto.jpg / foto.jpeg / foto.png (cualquiera que Celi suba) */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,31 +69,33 @@ body {
 .boton {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  padding: 13px 22px;
+  gap: 10px;
+  padding: 16px 28px;
   border-radius: 999px;
-  border: 1.4px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.16);
+  border: 1.6px solid rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.45);
   color: #FFFFFF;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 600;
+  font-size: 1.05rem;
   letter-spacing: 0.01em;
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
 .boton svg {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
 .boton:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.28);
-  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
 }
 
 .boton:focus-visible {
@@ -116,3 +118,4 @@ body {
     justify-content: center;
   }
 }
+
