@@ -9,8 +9,8 @@ const CONFIG = {
   frase: "Cada foto es un instante que decidí que no se pierda.",
 
   // Usuario de Instagram (sin @, solo el nombre de usuario)
-  instagram: "celina.aguirre",
+  instagram: "https://www.instagram.com/celinaaguirre.ph?igsh=MWpvYnJmdG9oZnAzNg==",
 
   // Link al portfolio (Behance, sitio propio, Google Drive, etc.)
-  portfolio: "https://www.behance.net/celinaaguirre",
+  portfolio: "https://celinaaguirre.mypixieset.com/",
 };
