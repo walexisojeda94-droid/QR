@@ -6,8 +6,8 @@
 
 const CONFIG = {
   // Usuario de Instagram (sin @, solo el nombre de usuario)
-  instagram: "celina.aguirre",
+  instagram: "celinaaguirre.ph",
 
   // Link al portfolio (Behance, sitio propio, Google Drive, etc.)
-  portfolio: "https://www.behance.net/celinaaguirre",
+  portfolio: "https://celinaaguirre.mypixieset.com/",
 };
